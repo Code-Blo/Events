@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitation Card Designer</title>
+  <link rel="stylesheet" href="invitation.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <h1>text </h1>
+    <a href="#" class="logo"><span>N</span>Cube</a>
+
+    <nav class="navbar">
+      <a href="#home">home</a>      
+      <a href="#service">service</a>
+      <a href="#about">about</a>
+      <a href="#gallery">gallery</a>
+      <a href="#price">price</a>
+      <a href="#review">review</a>
+      <a href="#contact">contact</a>
+    </nav>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="animate-fade">Create Beautiful Custom Invitations</h1>
+      <p class="animate-slide">Design and download your personalized cards for any occasion.</p>
+      <a href="#design-card" class="btn animate-bounce">Start Designing</a>
+    </div>
+  </section>
+
+  <!-- Invitation Card Designer Section -->
+  <section id="design-card" class="card-designer">
+    <h2>Design Your Invitation Card</h2>
+    <div class="designer-container">
+      <form class="card-form">
+        <label for="event-name">Event Name:</label>
+        <input type="text" id="event-name" name="event-name" placeholder="e.g. Wedding, Birthday" required>
+
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" name="event-date" required>
+
+        <label for="event-location">Event Location:</label>
+        <input type="text" id="event-location" name="event-location" placeholder="Location details" required>
+
+        <label for="card-message">Message:</label>
+        <textarea id="card-message" name="card-message" rows="4" placeholder="Add a personal message" required></textarea>
+
+        <label for="card-color">Card Background Color:</label>
+        <input type="color" id="card-color" name="card-color" value="#f39c12">
+
+        <button type="button" id="download-btn" class="btn animate-fade">Download Card</button>
+      </form>
+
+      <!-- Preview of the Invitation Card -->
+      <div id="card-preview" class="card-preview animate-fade">
+        <h3 id="preview-event-name">Your Event Name Here</h3>
+        <p id="preview-event-date">Date: </p>
+        <p id="preview-event-location">Location: </p>
+        <p id="preview-card-message">Your custom message will appear here.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="html2canvas.min.js"></script>
+  <script src="invitation.js"></script>
+</body>
+</html>
